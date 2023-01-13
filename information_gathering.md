@@ -1,5 +1,3 @@
-#Information gathering
-
 1. Conduction search engine discovery reconnaissance for information leakage.
 2. Fingerprint web server.
 3. Review Webserver metafile for information leakage.
