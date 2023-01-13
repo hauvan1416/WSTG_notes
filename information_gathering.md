@@ -1,15 +1,15 @@
 Information gathering
 
 	1. Conduction search engine discovery reconnaissance for information leakage.
-	2. Fingerprint web server
-	3. Review Webserver metafile for information leakage
-	4. Enumerate Applications on Webserver
-	5. Review webpage Content for information leakage
-	6. Identify Applications Entry points
-	7. Map Execution paths through Applications
-	8. Fingerprint Web Application Framework
-	9. Fingerprint Web Application
-	10. Map Application Archtecture
+	2. Fingerprint web server.
+	3. Review Webserver metafile for information leakage.
+	4. Enumerate Applications on Webserver.
+	5. Review webpage Content for information leakage.
+	6. Identify Applications Entry points.
+	7. Map Execution paths through Applications.
+	8. Fingerprint Web Application Framework.
+	9. Fingerprint Web Application.
+	10. Map Application Archtecture.
 
 		+ Use google hacking database : https://www.exploit-db.com/google-hacking-database
 		
@@ -37,5 +37,14 @@ Information gathering
 				
 		+ Response : Identify where new cookies are set (Set-Cookie header), modified, or added to.
 		+ Identify where there are any redirects (3xx HTTP status code), 400 status codes, in particular 403 Forbidden, and 500 internal server errors during normal responses (i.e., unmodified requests).
-			
+		+ Define the current framework :
+			HTTP headers
+			Cookies (search cookies on Cookiepedia)
+			HTML source code
+			Specific files and folders
+			File Extensions
+			Error Message
+		+ 
+		+ 
+		+ 
 		
