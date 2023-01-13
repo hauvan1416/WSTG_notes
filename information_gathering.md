@@ -35,16 +35,12 @@ SQL code, usernames and passwords, internal IP addresses, or debugging informati
 ## Use JSfinder to list all URLs and subdomains from JS files on a website.
 			
 ## Request : parameters used in POST request pay special attention to any hidden parameters.
-
 GET: 
 GET /shoppingApp/buyme.asp?CUSTOMERID=100&ITEM=z101a&PRICE=62.50&IP=x.x.x.x HTTP/1.1
 Host: x.x.x.x
-Cookie: SESSIONID=Z29vZCBqb2IgcGFkYXdhIG15IHVzZXJuYW1lIGlzIGZvbyBhbmQgcGFzc3dvcmQgaXMgYmFy
-					
--> injection locations : CUSTOMERID,ITEM,PRICE,IP,SESSIONID
-				
-POST: Same with GET
-	
+Cookie: SESSIONID=Z29vZCBqb2IgcGFkYXdhIG15IHVzZXJuYW1lIGlzIGZvbyBhbmQgcGFzc3dvcmQgaXMgYmFy					
+-> injection locations : CUSTOMERID,ITEM,PRICE,IP,SESSIONID				
+POST: Same with GET	
 ## Response 
 Identify where new cookies are set (Set-Cookie header), modified, or added to.
 ## Identify where there are any redirects (3xx HTTP status code), 400 status codes, in particular 403 Forbidden, and 500 internal server errors during normal responses (i.e., unmodified requests).
