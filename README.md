@@ -1,1 +1,0 @@
-# WSTG_notes
