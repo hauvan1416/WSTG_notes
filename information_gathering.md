@@ -1,15 +1,15 @@
-#Information gathering
+# Information gathering
 
-##1. Conduction search engine discovery reconnaissance for information leakage. 
-##2. Fingerprint web server.
-##3. Review Webserver metafile for information leakage.
-##4. Enumerate Applications on Webserver.
-##5. Review webpage Content for information leakage.
-##6. Identify Applications Entry points.
-##7. Map Execution paths through Applications.
-##8. Fingerprint Web Application Framework.
-##9. Fingerprint Web Application.
-##10. Map Application Archtecture.
+## 1. Conduction search engine discovery reconnaissance for information leakage. 
+## 2. Fingerprint web server.
+## 3. Review Webserver metafile for information leakage.
+## 4. Enumerate Applications on Webserver.
+## 5. Review webpage Content for information leakage.
+## 6. Identify Applications Entry points.
+## 7. Map Execution paths through Applications.
+## 8. Fingerprint Web Application Framework.
+## 9. Fingerprint Web Application.
+## 10. Map Application Archtecture.
 
 ##Use google hacking database(https://www.exploit-db.com/google-hacking-database)
 
