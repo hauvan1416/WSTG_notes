@@ -1,6 +1,6 @@
 Information gathering
 
-1. Conduction search engine discovery reconnaissance for information leakage.
+1. Conduction search engine discovery reconnaissance for information leakage. 
 2. Fingerprint web server.
 3. Review Webserver metafile for information leakage.
 4. Enumerate Applications on Webserver.
@@ -14,7 +14,13 @@ Information gathering
 Use google hacking database 
 
 	https://www.exploit-db.com/google-hacking-database
-
+	intitle:
+	inurl:
+	define: Google will define this message and will look for what had this error. For example: define:”sql syntax error”
+	site: This dork will return all the pages of a particular website that is crawled by Google. For example, site:technotification.com.
+	link:  It will also look in the site for URLs that possibly are vulnerable to SQL injection. For example: link:index.php?id= 
+	filetype: Searches for specific file types
+ 
 Whatweb
 
 	https://github.com/urbanadventurer/WhatWeb) 
@@ -50,7 +56,7 @@ Define the current framework :
 
 	HTTP headers
 	Cookies (search cookies on Cookiepedia)
-	HTML source code
+	HTML source code  
 	Specific files and folders
 	File Extensions
 	Error Message
