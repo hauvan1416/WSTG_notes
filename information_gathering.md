@@ -14,11 +14,17 @@ Information gathering
 Use google hacking database 
 
 	https://www.exploit-db.com/google-hacking-database
+	
 	intitle:
+	
 	inurl:
+	
 	define: Google will define this message and will look for what had this error. For example: define:”sql syntax error”
+	
 	site: This dork will return all the pages of a particular website that is crawled by Google. For example, site:technotification.com.
+	
 	link:  It will also look in the site for URLs that possibly are vulnerable to SQL injection. For example: link:index.php?id= 
+	
 	filetype: Searches for specific file types
  
 Whatweb
