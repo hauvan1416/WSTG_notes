@@ -1,48 +1,85 @@
-Information gathering
+#Information gathering
 
-1. Conduction search engine discovery reconnaissance for information leakage. 
-2. Fingerprint web server.
-3. Review Webserver metafile for information leakage.
-4. Enumerate Applications on Webserver.
-5. Review webpage Content for information leakage.
-6. Identify Applications Entry points.
-7. Map Execution paths through Applications.
-8. Fingerprint Web Application Framework.
-9. Fingerprint Web Application.
-10. Map Application Archtecture.
+##1. Conduction search engine discovery reconnaissance for information leakage. 
+##2. Fingerprint web server.
+##3. Review Webserver metafile for information leakage.
+##4. Enumerate Applications on Webserver.
+##5. Review webpage Content for information leakage.
+##6. Identify Applications Entry points.
+##7. Map Execution paths through Applications.
+##8. Fingerprint Web Application Framework.
+##9. Fingerprint Web Application.
+##10. Map Application Archtecture.
 
-Use google hacking database 
+##Use google hacking database(https://www.exploit-db.com/google-hacking-database)
 
-	https://www.exploit-db.com/google-hacking-database
+### Website
+intitle: This dork will tell Google to show only those pages that have the term in their HTML title
+'''
+intitle:”login page”
+'''
+inurl: It searches for the specified term in the URL
+'''
+inurl:”login.php”
+'''
+define: Google will define this message and will look for what had this error. 
+'''
+define:”sql syntax error”
+'''
+### Files
+filetype: Searches for specific file types.
+'''
+filetype:txt
+'''
+intitle: You can look into file directories of websites directly and download specified file
+'''
+intitle: “index of ” intext: “movie name” .
+'''
+###finding username and passwords
+'''
+intext: passwords filetype: txt
+mysql history files
+intext: account details filetype: txt
+intitle:index.of intext:”secring .skr”|&q…
+people.lst
+passwd
+master.passwd
+pwd.db
+htpasswd / htpasswd.bak
+htpasswd / htgroup
+spwd.db / passwd
+passwd / etc (reliable)
+config.php
+passlist
+'''
+##[Whatweb](https://github.com/urbanadventurer/WhatWeb)
+usage(kali)
+'''
+Whatweb 'url'
+Help : whatweb -h
 	
-	intitle:
-	
-	inurl:
-	
-	define: Google will define this message and will look for what had this error. For example: define:”sql syntax error”
-	
-	site: This dork will return all the pages of a particular website that is crawled by Google. For example, site:technotification.com.
-	
-	link:  It will also look in the site for URLs that possibly are vulnerable to SQL injection. For example: link:index.php?id= 
-	
-	filetype: Searches for specific file types
- 
-Whatweb
+'''
 
-	https://github.com/urbanadventurer/WhatWeb) 
-	usage(kali) : whatweb url
+##Review robots.txt,HTML tags (<META>),...
 
-Review robots.txt,HTML tags (<META>),...
+##Sub domain 
+Subdomain enumeration
+''' 
+subfinder: subfinder -d url
+'''
 
-Sub domain 
-	subdomain enumeration (subfinder: subfinder -d url)
+###Directory
+''' 
+Use dirbuster in kali to enumeration dir 
+'''
+###View page source 
+review comments for interesting information 
+* SQL code 
+* Usernames and passwords 
+* internal IP addresses 
+* debugging information
 
-Directory 
-	use dirbuster in kali to enumeration dir 
-
-F12 > review comments for interesting information( SQL code, usernames and passwords, internal IP addresses, or debugging information.)
-
-Use JSfinder to list all URLs and subdomains from JS files on a website.
+###Use JSfinder to list all URLs and subdomains from JS files on a website.
 
 Request : parameters used in POST request pay special attention to any hidden parameters.
 
