@@ -177,22 +177,42 @@ Vulnerability scan nmap
 ```   
 
 * wapiti -u url
+
+`wapiti -u http://testphp.vulnweb.com/`
+
+```
+
+ ██╗    ██╗ █████╗ ██████╗ ██╗████████╗██╗██████╗
+ ██║    ██║██╔══██╗██╔══██╗██║╚══██╔══╝██║╚════██╗
+ ██║ █╗ ██║███████║██████╔╝██║   ██║   ██║ █████╔╝
+ ██║███╗██║██╔══██║██╔═══╝ ██║   ██║   ██║ ╚═══██╗
+ ╚███╔███╔╝██║  ██║██║     ██║   ██║   ██║██████╔╝
+  ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═╝╚═════╝  
+Wapiti-3.0.4 (wapiti.sourceforge.io)
+[*] Wapiti found 88 URLs and forms during the scan
+[*] Loading modules:
+         backup, blindsql, brute_login_form, buster, cookieflags, crlf, csp, csrf, exec, file, htaccess, http_headers, methods, nikto, permanentxss, redirect, shellshock, sql, ssrf, wapp, xss, xxe
+
+[*] Launching module csp
+CSP is not set
+
+[*] Launching module http_headers
+Checking X-Frame-Options :
+X-Frame-Options is not set
+Checking X-XSS-Protection :
+X-XSS-Protection is not set
+Checking X-Content-Type-Options :
+X-Content-Type-Options is not set
+Checking Strict-Transport-Security :
+Strict-Transport-Security is not set
+
+```
+
 * nuclei -ut && nuclei -target url
 
 `nuclei -ut && nuclei -target http://testphp.vulnweb.com/`
 
 ```
-
-                     __     _
-   ____  __  _______/ /__  (_)
-  / __ \/ / / / ___/ / _ \/ /
- / / / / /_/ / /__/ /  __/ /
-/_/ /_/\__,_/\___/_/\___/_/   v2.8.5
-
-                projectdiscovery.io
-
-[INF] nuclei-templates are not installed, installing...
-[INF] Successfully downloaded nuclei-templates (v9.3.4) to /root/.local/nuclei-templates. GoodLuck!
 
                      __     _
    ____  __  _______/ /__  (_)
