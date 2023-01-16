@@ -105,6 +105,31 @@ Identify where there are any redirects (3xx HTTP status code), 400 statuscodes, 
 * File Extensions
 * Error Message
 
+### Port Scan
+use Nmap or nabuu
+```Nmap
+nmap [Scan Type(s)] [Options] {target specification}
+```
+```Open Ports
+nmap -p port url
+```
+```Identify Operating Systems
+nmap -sV url
+```
+```Stealth Scanning
+Stealth scans are executed to avoid detection by firewalls and security systems. This is achieved by avoiding a 3-way handshake between the systems
+nmap -sS url
+```
+```Scan Commonly Used Ports
+nmap –top-ports n url
+n is the number of ports you’d like to scan
+
+Vulnerability scan nmap
+[Link](https://github.com/scipag/vulscan)
+
+
+
+
 
 
 
