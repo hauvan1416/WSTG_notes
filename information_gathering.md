@@ -157,11 +157,10 @@ Vulnerability scan nmap
 [Link](https://github.com/scipag/vulscan)
 
 ## Some Automatic Scanner
-```
+
 * nikto -h url
-`Nikto -h thisislegal.com   
-`
-```
+`Nikto -h thisislegal.com `  
+```  
 - Nikto v2.1.6
 ---------------------------------------------------------------------------
 + Target IP:          178.79.182.67
@@ -175,7 +174,7 @@ Vulnerability scan nmap
 + The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
 + Root page / redirects to: https://thisislegal.com/
 ...
-```
+```   
 whatweb -a 4 url
 wapiti -u url
 nuclei -ut && nuclei -target url
