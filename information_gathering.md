@@ -78,6 +78,7 @@ Subdomain enumeration
 ``` 
 amass enum -passive -d domain.com
 ```
+```
 Example 
 **amass enum -passive -d thisislegal.com**   
                                   
