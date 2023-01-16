@@ -118,7 +118,7 @@ Cookie: SESSIONID=Z29vZCBqb2IgcGFkYXdhIG15IHVzZXJuYW1lIGlzIGZvbyBhbmQgcGFzc3dvcm
 POST: Same with GET
 ```
 Response 
-
+http://testphp.vulnweb.com/
 Identify where new cookies are set (Set-Cookie header), modified, or added to.
 Identify where there are any redirects (3xx HTTP status code), 400 statuscodes, in particular 403 Forbidden, and 500 internal server errors during normal responses (i.e., unmodified requests).
 	
@@ -158,8 +158,8 @@ Vulnerability scan nmap
 
 ## Some Automatic Scanner
 
-* nikto -h url
-`Nikto -h thisislegal.com `  
+* nikto -h url  
+`Nikto -h thisislegal.com `    
 ```  
 - Nikto v2.1.6
 ---------------------------------------------------------------------------
@@ -175,10 +175,69 @@ Vulnerability scan nmap
 + Root page / redirects to: https://thisislegal.com/
 ...
 ```   
-whatweb -a 4 url
-wapiti -u url
-nuclei -ut && nuclei -target url
+
+* wapiti -u url
+* nuclei -ut && nuclei -target url
+
+`nuclei -ut && nuclei -target http://testphp.vulnweb.com/`
+
 ```
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v2.8.5
+
+                projectdiscovery.io
+
+[INF] nuclei-templates are not installed, installing...
+[INF] Successfully downloaded nuclei-templates (v9.3.4) to /root/.local/nuclei-templates. GoodLuck!
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   v2.8.5
+
+                projectdiscovery.io
+
+[INF] Using Nuclei Engine 2.8.5 (outdated)
+[INF] Using Nuclei Templates 9.3.4 (latest)
+[INF] Templates added in last update: 15
+[INF] Templates loaded for scan: 4781
+[INF] Targets loaded for scan: 1
+[INF] Templates clustered: 907 (Reduced 836 HTTP Requests)
+[nginx-version] [http] [info] http://testphp.vulnweb.com/ [nginx/1.19.0]
+[php-detect] [http] [info] http://testphp.vulnweb.com/ [5.6.40]
+[INF] Using Interactsh Server: oast.online
+[tech-detect:dreamweaver] [http] [info] http://testphp.vulnweb.com/
+[tech-detect:nginx] [http] [info] http://testphp.vulnweb.com/
+[tech-detect:php] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:access-control-max-age] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:access-control-allow-headers] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:permissions-policy] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:access-control-allow-origin] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:access-control-expose-headers] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:strict-transport-security] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:content-security-policy] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:access-control-allow-credentials] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:access-control-allow-methods] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:x-frame-options] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:referrer-policy] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:clear-site-data] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:x-content-type-options] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] http://testphp.vulnweb.com/
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] http://testphp.vulnweb.com/
+[waf-detect:nginxgeneric] [http] [info] http://testphp.vulnweb.com/
+[idea-folder-exposure] [http] [info] http://testphp.vulnweb.com/.idea/workspace.xml
+[clientaccesspolicy] [http] [info] http://testphp.vulnweb.com/clientaccesspolicy.xml
+[txt-fingerprint] [dns] [info] testphp.vulnweb.com ["google-site-verification:toEctYsulNIxgraKk7H3z58PCyz2IOCc36pIupEPmYQ"]
+
+```
+
 
 
 
