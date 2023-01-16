@@ -13,6 +13,8 @@
 
 # List need to check
 
+### Dork in https://dorks.faisalahmed.me/#
+
 ### Use [google hacking database](https://www.exploit-db.com/google-hacking-database)
 
 ### Website
