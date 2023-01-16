@@ -64,9 +64,9 @@ Help : whatweb -h
 	
 ```
 Example
-```
-** whatweb thisislegal.com **
 
+**Whatweb thisislegal.com**
+```
 http://thisislegal.com [302 Found] Apache[2.4.48], Country[UNITED KINGDOM][GB], HTTPServer[Unix][Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7], IP[178.79.182.67], OpenSSL[1.1.1k], PHP[8.0.7], RedirectLocation[https://thisislegal.com/], Title[302 Found]
 https://thisislegal.com/ [200 OK] Apache[2.4.48], Cookies[PHPSESSID], Country[UNITED KINGDOM][GB], Frame, HTML5, HTTPServer[Unix][Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7], IP[178.79.182.67], JQuery, Meta-Author[t0mmy9 and sOwL], OpenSSL[1.1.1k], PHP[8.0.7], PasswordField[password], Script[text/javascript], Title[ThisisLegal.com - Are You?], X-Powered-By[PHP/8.0.7], X-UA-Compatible[IE=edge]
 ```
@@ -78,10 +78,9 @@ Subdomain enumeration
 ``` 
 amass enum -passive -d domain.com
 ```
-```
-Example 
-** amass enum -passive -d thisislegal.com **   
-                                  
+Example
+** amass enum -passive -d thisislegal.com **
+```                                
 thisislegal.com
 www.thisislegal.com
 mail.thisislegal.com
