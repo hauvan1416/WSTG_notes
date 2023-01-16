@@ -79,7 +79,7 @@ Subdomain enumeration
 ``` 
 amass enum -passive -d domain.com
 ```
-Example
+Example  
 `amass enum -passive -d thisislegal.com`
 
 ```                                
@@ -156,9 +156,26 @@ n is the number of ports you’d like to scan
 Vulnerability scan nmap
 [Link](https://github.com/scipag/vulscan)
 
-Some Automatic Scanner
+## Some Automatic Scanner
 ```
-nikto -h url
+* nikto -h url
+`Nikto -h thisislegal.com   
+`
+```
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          178.79.182.67
++ Target Hostname:    thisislegal.com
++ Target Port:        80
++ Start Time:         2023-01-16 04:24:04 (GMT-5)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Root page / redirects to: https://thisislegal.com/
+...
+```
 whatweb -a 4 url
 wapiti -u url
 nuclei -ut && nuclei -target url
