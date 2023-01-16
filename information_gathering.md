@@ -127,9 +127,20 @@ Scan Commonly Used Ports
 ```
 nmap –top-ports n url
 n is the number of ports you’d like to scan
-
+```
 Vulnerability scan nmap
 [Link](https://github.com/scipag/vulscan)
+
+Some Automatic Scanner
+```
+nikto -h url
+whatweb -a 4 url
+wapiti -u url
+nuclei -ut && nuclei -target url
+```
+
+
+
 
 
 
