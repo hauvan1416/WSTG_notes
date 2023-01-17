@@ -154,7 +154,9 @@ nmap –top-ports n url
 n is the number of ports you’d like to scan
 ```
 Vulnerability scan nmap
-[Link](https://github.com/scipag/vulscan)
+`sudo nmap --script vuln thisislegal.com -v
+`
+[Advance](https://github.com/scipag/vulscan)
 
 ## Some Automatic Scanner
 
