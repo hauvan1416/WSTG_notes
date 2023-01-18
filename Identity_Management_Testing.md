@@ -20,4 +20,5 @@
 * Switching to well known users (e.g. admin, backups, etc.)
  
 `Use Auth Analyze Extension in BurpSuite`
+
 ![Auth_Analyze](./img/Auth_analyze.png)
