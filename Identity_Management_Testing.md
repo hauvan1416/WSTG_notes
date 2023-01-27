@@ -40,6 +40,7 @@ Validate the registration process:
 2. Can the exchange of identity information be manipulated during registration ?
 
 ### Account Enumeration and Guessable User Account
+
 #### Analyzing 
 1. Valid credentials
 2. Valid user with wrong password
@@ -58,3 +59,15 @@ Example:
 http://www.foo.com/account1 - we receive from web server: 403 Forbidden  ---------- ** the user exists, but the tester cannot view the web page **
 http://www.foo.com/account2 - we receive from web server: 404 file Not Found ---------- ** the user "account2" does not exist **
 ```
+7. Web Page Titles
+```
+Invalid user
+Invalid authentication
+```
+8.  Message Received from a Recovery Facility ( Forgotten password function,... )
+```
+Invalid username: email address is not valid or the specified user was not found.
+Valid username: Your password has been successfully sent to the email address you registered with.
+```
+9.  404 Error Message
+10. Response Times 
