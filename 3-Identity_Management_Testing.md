@@ -22,7 +22,6 @@
 `Use Auth Analyze Extension in BurpSuite`
 
 ![Auth_Analyze](./img/Auth_analyze.png)
-
 ### User Registration Process
 
 Verify that the identity requirements for user registration are aligned with business and security requirements:
@@ -71,3 +70,9 @@ Valid username: Your password has been successfully sent to the email address yo
 ```
 9.  404 Error Message
 10. Response Times 
+
+### Username Policy
+1. Determine the structure of account names.
+2. Evaluate the application's response to valid and invalid account names.
+3. Use different responses to valid and invalid account names to enumerate valid account names.
+4. Use account name dictionaries to enumerate valid account names.
