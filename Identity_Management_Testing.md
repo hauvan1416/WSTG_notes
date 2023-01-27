@@ -22,3 +22,39 @@
 `Use Auth Analyze Extension in BurpSuite`
 
 ![Auth_Analyze](./img/Auth_analyze.png)
+
+### User Registration Process
+
+Verify that the identity requirements for user registration are aligned with business and security requirements:
+
+1. Can anyone register for access?
+2. Are registrations vetted by a human prior to provisioning, or are they automatically granted if the criteria are met?
+3. Can the same person or identity register multiple times?
+4. Can users register for different roles or permissions?
+5. What proof of identity is required for a registration to be successful?
+6. Are registered identities verified?
+
+Validate the registration process:
+
+1. Can identity information be easily forged or faked?
+2. Can the exchange of identity information be manipulated during registration ?
+
+### Account Enumeration and Guessable User Account
+#### Analyzing 
+1. Valid credentials
+2. Valid user with wrong password
+3. Non exist username 
+4. Error code recived on login page
+5. URLs and URL Redirections
+Example:
+```
+http://www.foo.com/err.jsp?User=baduser&Error=0
+http://www.foo.com/err.jsp?User=gooduser&Error=2
+```
+** => In the first case they have provided a bad user ID and bad password. In the second, a good user ID and a bad password, so they can identify a valid user ID. **
+6. URI Probing ( Thăm dò)
+Example:
+```
+http://www.foo.com/account1 - we receive from web server: 403 Forbidden  ---------- ** the user exists, but the tester cannot view the web page **
+http://www.foo.com/account2 - we receive from web server: 404 file Not Found ---------- ** the user "account2" does not exist **
+```
