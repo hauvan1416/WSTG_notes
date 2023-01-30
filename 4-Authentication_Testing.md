@@ -89,10 +89,33 @@ Pragma: no-cache
 ```
 
 ## 7 Testing for Weak Password Policy
+1. What character  are permitted and forbidden for use  within a password (Lower, uppercase letters, digits and special symbols; ...)
+2. How often user can change their password ? how quickly user can change their password after a previous change ? user may bypass  hisstory requirements b y changing  their password 5 times in a row after the lát password change  the have configured their intial passsword again.
+3. When must user change their password ?
+4. How ofteb user can reuse a password ? Does the application maintain a history of the user’s previous used 8 passwords
+5. How differrnt must the next password be from the last password?
+6. Is the user prevented from using his username or orther account  information ( first name, lastname..) in the password ?
+7. Min, max of password lenght ?
+8. Possible to set common password (123456,Password ......)?
 
 ## 8 Testing for Weak Security Question Answer
+1. Try to obtain a list of security questions by creating a new account or forgot password .If any question fall in the (guessed, brute forced, avaiable in social media,etc .) it is vulnerable to attacked.
+2. If the system allows the user to generate their own security questions, it is vulnerable to having insecure questions created. 
+3. If the system uses the self-generated security questions during the forgotten password functionality and if usernames can be enumerated
+### step to bruce-forcible answers
+* The application allow the end user chose the question to answer :
+	+ A "public answer" ,search in gg.
+	+ A factual answer ,Ex: first school, your maiden name
+	....
+*Determine how many guesses you have if possible.
+	+ Function allow unlimited attempts?
+	+ Lockout after many time incorrect answer ?
+	+ Pick the appropriate question based on analysis from the above points, and do research to determine the most likely answers.
 
 ## 9 Testing for Weak Password Change or Reset Functionalities
+### Genaral concern
++ Password reset process weaker than the authentication process ?
++
 
 ## 10 Testing for Weaker Authentication in Alternative Channel
 

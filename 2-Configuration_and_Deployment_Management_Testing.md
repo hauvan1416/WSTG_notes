@@ -13,11 +13,3 @@
 ## 11.[Test Cloud Storage](https://github.com/OWASP/wstg/blob/master/document/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/11-Test_Cloud_Storage.md)
 ## 12.[Testing for Content Security Policy](https://github.com/OWASP/wstg/blob/master/document/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy.md)
 ## 13.[Test Path Confusion](https://github.com/OWASP/wstg/blob/master/document/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/13-Test_for_Path_Confusion.md)
-
-
-# List need to check
-### All the elements of the infrastructure need to be reviewed in order to make sure that they don’t contain any known vulnerabilities.
-### A review needs to be made of the administrative tools used to maintain all the different elements.
-### The authentication systems, need to reviewed in order to assure that they serve the needs of the application and that they cannot be manipulated by external users to leverage access.
-
-###
