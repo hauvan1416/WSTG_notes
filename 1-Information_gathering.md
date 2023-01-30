@@ -32,7 +32,6 @@ intitle: This dork will tell Google to show only those pages that have the term 
 site:thisislegal.com intitle:index.of
 ```
 ![intitle](./img/intitle.png)
-inurl: It searches for the specified term in the URL
 ```
 inurl:login.php
 ```
@@ -101,9 +100,8 @@ Discoveries are being migrated into the local database`
 ```
 
 ### Directory
-``` 
-Use dirbuster in kali to enumeration dir 
-```
+``` usage : dirsearch -u url -e all```
+![dirsearch](./img/dirsearch.png)
 ### View page source 
 review comments for interesting information 
 * SQL code 
