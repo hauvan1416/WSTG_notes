@@ -73,8 +73,20 @@ Use Burp Intruder.
 4. Try a [SQL Injection](./SQL_Injection.md) in the login form.
 
 ## 5 Testing for Vulnerable Remember Password
+1. Check for attribute autocomplete=”off”.
+2. Look for passwords being stored in a cookie. Examine the cookies stored by the application. Verify that the credentials are not stored in clear text, must be hashed.
+3. Examine the hashing mechanism: if it is a common, well-known algorithm, check for its strength; in homegrown hash functions, attempt several usernames to check whether the hash function is easily guessable.
+4. Verify that the credentials are only sent during the log in phase, and not sent together with every request to the application.
+5. Consider other sensitive form fields (e.g. an answer to a secret question that must be entered in a password recovery or account unlock form).
 
 ## 6 Testing for Browser Cache Weaknesses
+1. Entering information into the application  and logging out. Click on ** Back ** button of the browser to check whether previous displayed sensitive information can be access while unauthenticated. 
+2. check that the application does not leak any sensitive data into the browser cache ( Use burp )
+```
+Cache-Control: no-cache, no-store
+Expires: 0
+Pragma: no-cache
+```
 
 ## 7 Testing for Weak Password Policy
 
