@@ -3,7 +3,7 @@
 ### Check SSL Certificate
 -  Use SSLscan or burpsuite extension
 ** sslscan 'url' **
-```
+``` sslscan
 slscan thisislegal.com
 Version: 2.0.15-static
 OpenSSL 1.1.1q-dev  xx XXX xxxx
@@ -11,7 +11,7 @@ OpenSSL 1.1.1q-dev  xx XXX xxxx
 Connected to 178.79.182.67
 
 Testing SSL server thisislegal.com on port 443 using SNI name thisislegal.com
-
+s
   SSL/TLS Protocols:
 SSLv2     disabled
 SSLv3     disabled
@@ -115,10 +115,60 @@ Pragma: no-cache
 ## 9 Testing for Weak Password Change or Reset Functionalities
 ### Genaral concern
 + Password reset process weaker than the authentication process ?
-+
++ Have rate limit or orther protect against automated attack ?
++ It is vulnerable to common attacks?
++ Does the reset process allow user enumeration ?
+
+### Email - New password sent
++ is the user forced to change the password on initial login?
++ Is the password securely generated?
++ Is the user's existing password sent to them?
++ the emails sent from a domain with anti-spoofing protection?
+
+### email- Link sent
++ link use HTTPS?
++ link be used multiple times?
++ link expire if it remains unused?
++ token sufficiently long and random? (At least 128 bits (or 32 hex characters))
++ Does the link contain a user ID?
++ Can you inject a different host header?
++ the link exposed to third parties?
++ the emails sent from a domain with anti-spoofing protection?
+
+### Tokens Sent Over SMS or Phone Call
++ token sufficiently long and random?
++ the token be used multiple times?
++ Are appropriate rate limiting and restrictions in place?
+
+### Authenticated Password Changes
++ When setting the password, can you specify the user ID?
++ Is the user required to re-authenticate?
++ Is the password change form vulnerable to CSRF?
++ Is a strong and effective password policy applied?
 
 ## 10 Testing for Weaker Authentication in Alternative Channel
++ Understand the Primary Mechanism
++ Identify Other Channels
++ Enumerate Authentication Functionality
++ Review and Test
 
 ## 11 Testing Multi-Factor Authentication
+### Types of MFA
+
+| Factor | Examples |
+|--------|----------|
+| Something You Know | Passwords, PINs and security questions. |
+| Something You Have | Hardware or software tokens, certificates, email*, SMS, and phone calls. |
+| Something You Are | Fingerprints, facial recognition, iris scans, handprint scans and behavioural factors. |
+| Location | Source IP ranges, and geolocation. |
+
+### Check for MFA Bypasses
+*  first step
+	+ The main login page .
+	+ Security critcal functionality(such as disabling MFA or changing a password).
+	+ Federated login providers.
+	+ API endpoints
+	+ Alternative (non-HTTP) protocols
+	+ Test or debug functionality.
 
 

@@ -32,7 +32,7 @@ define:”sql syntax error”
 ```
 ### Files
 filetype: Searches for specific file types.
-```
+```txt
 filetype:txt
 ```
 intitle: You can look into file directories of websites directly and download specified file
@@ -41,20 +41,20 @@ intitle: “index of ” intext: “movie name” .
 ```
 ### Finding username and passwords
 ```
-intext: passwords filetype: txt
-mysql history files
-intext: account details filetype: txt
-intitle:index.of intext:”secring .skr”|&q…
-people.lst
-passwd
-master.passwd
-pwd.db
-htpasswd / htpasswd.bak
-htpasswd / htgroup
-spwd.db / passwd
-passwd / etc (reliable)
-config.php
-passlist
+intext: passwords filetype: txt  
+mysql history files 
+intext: account details filetype: txt  
+intitle:index.of intext:”secring .skr”|&q… 
+people.lst  
+passwd  
+master.passwd  
+pwd.db  
+htpasswd / htpasswd.bak  
+htpasswd / htgroup  
+spwd.db / passwd  
+passwd / etc (reliable)  
+config.php  
+passlist  
 ```
 ## [Whatweb](https://github.com/urbanadventurer/WhatWeb)
 usage(kali)
