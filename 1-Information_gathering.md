@@ -31,12 +31,12 @@ intitle: This dork will tell Google to show only those pages that have the term 
 ```
 site:thisislegal.com intitle:index.of
 ```
-![intitle](./intitle.png)
+![intitle](./img/intitle.png)
 inurl: It searches for the specified term in the URL
 ```
 inurl:login.php
 ```
-![inurl](./inurl.png)
+![inurl](./img/inurl.png)
 ### Files
 filetype: Searches for specific file types.
 ```txt
