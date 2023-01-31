@@ -7,11 +7,11 @@
 * Are there request parameters which could be used for file-related operations?
 * Are there unusual file extensions?
 * Are there interesting variable names?
-	+ **http://example.com/getUserProfile.jsp?item=ikki.html >> **
+	+ **http://example.com/getUserProfile.jsp?item=ikki.html >>**
 	`item=ikki.html >> ikki >> inject`
-	+ **http://example.com/index.php?file=content >> **
+	+ **http://example.com/index.php?file=content >>**
 	`file=content >> content >> inject`
-	+ **http://example.com/main.cgi?home=index.htm >> **
+	+ **http://example.com/main.cgi?home=index.htm >>**
 	`home=index.htm >> index >> inject`
 
 * In Cookie
