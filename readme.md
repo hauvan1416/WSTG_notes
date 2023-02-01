@@ -7,3 +7,5 @@
 ## III. [Identity Management Testing](./3-Identity_Management_Testing.md)
 
 ## IV. [Authentication Testing](./4-Authentication_Testing.md)
+
+## V. [Authorization Testing](./5-Authorization_Testing.md)

@@ -113,7 +113,7 @@ review comments for interesting information
 
 Request : parameters used in POST request pay special attention to any hidden parameters.
 
-```GET: 
+```http 
 GET /shoppingApp/buyme.asp?CUSTOMERID=100&ITEM=z101a&PRICE=62.50&IP=x.x.x.x HTTP/1.1
 Host: x.x.x.x
 Cookie: SESSIONID=Z29vZCBqb2IgcGFkYXdhIG15IHVzZXJuYW1lIGlzIGZvbyBhbmQgcGFzc3dvcmQgaXMgYmFy
@@ -137,7 +137,7 @@ Identify where there are any redirects (3xx HTTP status code), 400 statuscodes, 
 
 ### Port Scan
 use Nmap or nabuu
-```Nmap
+```
 nmap [Scan Type(s)] [Options] {target specification}
 ```
 Open Ports

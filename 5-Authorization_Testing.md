@@ -131,7 +131,7 @@ Cookie: SessionID=ADMINISTRATOR_USER_SESSION
 
 EventID=1000001
 ```
-Response**
+**Response**
 ```json
 HTTP/1.1 200 OK
 [other HTTP headers]
@@ -187,3 +187,32 @@ X-Rewrite-URL: /myprecious
 		+ 172.16.0.0/12
 		+ 192.168.0.0/16
 		+ Link local addresses: 169.254.0.0/16
+
+
+## Testing for Privilege Escalation
+## Insecure Direct Object 
++ **Map out all locations in the application where user input is used to reference objects directly**
+1. Parameter Is Used Directly to Retrieve a Database Record
+```url 
+http://foo.bar/somepage?invoice=12345
+```
+2. Parameter Is Used Directly to Perform an Operation in the System
+```url
+http://foo.bar/changepassword?user=someuser
+```
+3. Parameter Is Used Directly to Retrieve a File System Resource
+```url
+http://foo.bar/showImage?img=img00011
+```
+4. Parameter Is Used Directly to Access Application 
+```url
+http://foo.bar/accessPage?menuitem=12
+```
+
++ **Having at least two (often more) users to cover different owned objects and functions**
+#### Example
+ 1. Use BurpSuite Extension Auth Analyzer 
+ 2. Add session into sesssion tab (normal user, admin)
+
+![idor](./img/idor.png)
+
