@@ -3,7 +3,7 @@
 ### Check SSL Certificate
 -  Use SSLscan or burpsuite extension
 ** sslscan 'url' **
-``` sslscan
+```sslscan
 slscan thisislegal.com
 Version: 2.0.15-static
 OpenSSL 1.1.1q-dev  xx XXX xxxx
@@ -11,8 +11,7 @@ OpenSSL 1.1.1q-dev  xx XXX xxxx
 Connected to 178.79.182.67
 
 Testing SSL server thisislegal.com on port 443 using SNI name thisislegal.com
-s
-  SSL/TLS Protocols:
+SSL/TLS Protocols:
 SSLv2     disabled
 SSLv3     disabled
 TLSv1.0   disabled
