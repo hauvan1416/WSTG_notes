@@ -136,34 +136,33 @@ Identify where there are any redirects (3xx HTTP status code), 400 statuscodes, 
 * Error Message
 
 ### Port Scan
-use Nmap or nabuu
+** Use [nmapAutomator](https://github.com/21y4d/nmapAutomator)
 ```
-nmap [Scan Type(s)] [Options] {target specification}
+Usage: nmapAutomator.sh -H/--host <TARGET-IP> -t/--type <TYPE>
+Optional: [-r/--remote <REMOTE MODE>] [-d/--dns <DNS SERVER>] [-o/--output <OUTPUT DIRECTORY>] [-s/--static-nmap <STATIC NMAP PATH>]
+
+Scan Types:
+	Network : Shows all live hosts in the host's network (~15 seconds)
+	Port    : Shows all open ports (~15 seconds)
+	Script  : Runs a script scan on found ports (~5 minutes)
+	Full    : Runs a full range port scan, then runs a thorough scan on new ports (~5-10 minutes)
+	UDP     : Runs a UDP scan "requires sudo" (~5 minutes)
+	Vulns   : Runs CVE scan and nmap Vulns scan on all found ports (~5-15 minutes)
+	Recon   : Suggests recon commands, then prompts to automatically run them
+	All     : Runs all the scans (~20-30 minutes)
 ```
-Open Ports
-```
-nmap -p port url
+```Demo
+./nmapAutomator.sh --host 44.228.249.3 --type All
+
 ```
 
-Identify Operating Systems
-```
-nmap -sV url
-```
-![nmap1](./img/nmap1.png)
-Stealth Scanning
-```
-Stealth scans are executed to avoid detection by firewalls and security systems. This is achieved by avoiding a 3-way handshake between the systems
-nmap -sS url
-```
-Scan Commonly Used Ports
-```
-nmap 
-```
 Vulnerability scan nmap
-`sudo nmap --script vuln thisislegal.com -v
-`
 
-[Advance](https://github.com/scipag/vulscan)
+```
+sudo nmap --script vuln thisislegal.com -v
+````
+
+[For more](https://github.com/scipag/vulscan)
 
 ## Some Automatic Scanner
 

@@ -190,7 +190,7 @@ X-Rewrite-URL: /myprecious
 
 
 ## Testing for Privilege Escalation
-## Insecure Direct Object 
+## Insecure Direct Object References
 + **Map out all locations in the application where user input is used to reference objects directly**
 1. Parameter Is Used Directly to Retrieve a Database Record
 ```url 
