@@ -23,6 +23,7 @@
 # List need to check
 
 ### Dork in https://dorks.faisalahmed.me/#
+![dork](./img/dork.png)
 
 ### Use [google hacking database](https://www.exploit-db.com/google-hacking-database)
 
@@ -156,11 +157,6 @@ Scan Types:
 
 ```
 
-Vulnerability scan nmap
-
-```
-sudo nmap --script vuln thisislegal.com -v
-````
 
 [For more](https://github.com/scipag/vulscan)
 
@@ -220,7 +216,7 @@ Strict-Transport-Security is not set
 
 `nuclei -ut && nuclei -target http://testphp.vulnweb.com/`
 
-```
+```md
 
                      __     _
    ____  __  _______/ /__  (_)

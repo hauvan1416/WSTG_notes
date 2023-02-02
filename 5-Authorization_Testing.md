@@ -210,7 +210,7 @@ http://foo.bar/accessPage?menuitem=12
 ```
 
 + **Having at least two (often more) users to cover different owned objects and functions**
-#### Example
+#### Practice
  1. Use BurpSuite Extension Auth Analyzer 
  2. Add session into sesssion tab (normal user, admin)
 
