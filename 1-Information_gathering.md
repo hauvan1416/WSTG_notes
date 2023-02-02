@@ -153,64 +153,22 @@ Scan Types:
 	All     : Runs all the scans (~20-30 minutes)
 ```
 ```Demo
-./nmapAutomator.sh --host 44.228.249.3 --type All
-
+./nmapAutomator.sh --host thisislegal.com --type port
 ```
+![portscan](./img/portscan.png)
+![portscan](./img/portscan1.png)
 
 
 [For more](https://github.com/scipag/vulscan)
 
+## Spider
+** Use BurpSuite  **
+![spider](./img/spider.png)
+![spider](./img/spider2.png)
+![spider](./img/spider3.png)
+
 ## Some Automatic Scanner
-
-* nikto -h url  
-`Nikto -h thisislegal.com `    
-```  
-- Nikto v2.1.6
----------------------------------------------------------------------------
-+ Target IP:          178.79.182.67
-+ Target Hostname:    thisislegal.com
-+ Target Port:        80
-+ Start Time:         2023-01-16 04:24:04 (GMT-5)
----------------------------------------------------------------------------
-+ Server: Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7
-+ The anti-clickjacking X-Frame-Options header is not present.
-+ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
-+ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
-+ Root page / redirects to: https://thisislegal.com/
-...
-```   
-
-* wapiti -u url
-
-`wapiti -u http://testphp.vulnweb.com/`
-
-```
-
- ██╗    ██╗ █████╗ ██████╗ ██╗████████╗██╗██████╗
- ██║    ██║██╔══██╗██╔══██╗██║╚══██╔══╝██║╚════██╗
- ██║ █╗ ██║███████║██████╔╝██║   ██║   ██║ █████╔╝
- ██║███╗██║██╔══██║██╔═══╝ ██║   ██║   ██║ ╚═══██╗
- ╚███╔███╔╝██║  ██║██║     ██║   ██║   ██║██████╔╝
-  ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝     ╚═╝   ╚═╝   ╚═╝╚═════╝  
-Wapiti-3.0.4 (wapiti.sourceforge.io)
-[*] Wapiti found 88 URLs and forms during the scan
-[*] Loading modules:
-         backup, blindsql, brute_login_form, buster, cookieflags, crlf, csp, csrf, exec, file, htaccess, http_headers, methods, nikto, permanentxss, redirect, shellshock, sql, ssrf, wapp, xss, xxe
-
-[*] Launching module csp
-CSP is not set
-
-[*] Launching module http_headers
-Checking X-Frame-Options :
-X-Frame-Options is not set
-Checking X-XSS-Protection :
-X-XSS-Protection is not set
-Checking X-Content-Type-Options :
-X-Content-Type-Options is not set
-Checking Strict-Transport-Security :
-Strict-Transport-Security is not set
-
-```
+### Nuclei
 
 * nuclei -ut && nuclei -target url
 
