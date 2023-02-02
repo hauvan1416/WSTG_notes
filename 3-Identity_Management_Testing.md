@@ -12,7 +12,7 @@
 
 ## Need to Check
 
-### IDOR check 
+###  check 
 
 * Cookie variable (e.g. role=admin, isAdmin=True)
 * Account variable (e.g. Role: manager)
@@ -52,6 +52,10 @@ http://www.foo.com/err.jsp?User=baduser&Error=0
 http://www.foo.com/err.jsp?User=gooduser&Error=2
 ```
 ** => In the first case they have provided a bad user ID and bad password. In the second, a good user ID and a bad password, so they can identify a valid user ID. **
+
+![enum](./img/enum.png)
+![enum](./img/enum2.png)
+
 6. URI Probing ( Thăm dò)
 Example:
 ```
