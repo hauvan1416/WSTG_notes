@@ -47,7 +47,7 @@ Validate the registration process:
 4. Error code recived on login page
 5. URLs and URL Redirections
 Example:
-```
+```http
 http://www.foo.com/err.jsp?User=baduser&Error=0
 http://www.foo.com/err.jsp?User=gooduser&Error=2
 ```

@@ -2,7 +2,7 @@
 
 ### Check SSL Certificate
 -  Use SSLscan or burpsuite extension
-** sslscan 'url' **
+**sslscan 'url'**
 ```sslscan
 slscan thisislegal.com
 Version: 2.0.15-static
