@@ -9,3 +9,7 @@
 ## IV. [Authentication Testing](./4-Authentication_Testing.md)
 
 ## V. [Authorization Testing](./5-Authorization_Testing.md)
+
+## VI. [Session Management Testing](./6-Session_Management_Testing.md)
+
+## VII. [Input Validation Testing](./7-Input_Validation_Testing)
